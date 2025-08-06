@@ -3,6 +3,7 @@ healthcheckPath = "/api/tags"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+persistentStorage = true
 
 [variables]
 GPT_OSS_MODEL = "gpt-oss:20b"
