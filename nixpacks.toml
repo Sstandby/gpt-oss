@@ -1,0 +1,17 @@
+[variables]
+NIXPACKS_METADATA = "docker"
+
+[phases.setup]
+nixPkgs = ["curl", "bash"]
+
+[phases.install]
+cmds = [
+  "curl -fsSL https://ollama.com/install.sh | sh",
+  "chmod +x start.sh"
+]
+
+[phases.build]
+cmds = ["echo 'Ollama installation completed'"]
+
+[start]
+cmd = "./start.sh"
